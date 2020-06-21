@@ -1,0 +1,22 @@
+{
+    "name": "susanne/typo3-system-status",
+    "license": "GPL-2.0-or-later",
+    "type": "typo3-cms-extension",
+    "description": "Example extension for system status PSR 14 event listener",
+    "homepage": "https://susi.dev",
+    "keywords": [
+        "TYPO3 CMS"
+    ],
+    "version": "1.0.0",
+    "require": {
+        "typo3/cms-core": "*@dev"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Susanne\\Cupla\\": "Classes/"
+        }
+    }
+}
