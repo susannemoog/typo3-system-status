@@ -1,0 +1,14 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  Susanne\SystemStatus\:
+    resource: '../Classes/*'
+
+  Susanne\SystemStatus\ShowGitRevision:
+    tags:
+      - name: event.listener
+        identifier: 'susanne/show-git-revision'
+        event: TYPO3\CMS\Backend\Backend\Event\SystemInformationToolbarCollectorEvent
